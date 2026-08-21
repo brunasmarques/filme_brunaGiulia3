@@ -1,0 +1,33 @@
+GET http://localhost:3000/
+
+###
+
+GET http://localhost:3000/movies
+
+###
+
+POST http://localhost:3000/create-movie
+Content-Type: application/json
+
+{
+  "titulo": "Vestidas para casar",
+  "genero": "Romance",
+  "duracao": 148,
+  "classificacao": "13"
+}
+
+###
+
+PUT http://localhost:3000/update-movie/4
+Content-Type: application/json
+
+{
+  "titulo":"Titanic",
+  "genero":"Romance",
+  "duracao":194,
+  "classificacao":"1"
+}
+
+###
+
+DELETE http://localhost:3000/delete-movie/27
