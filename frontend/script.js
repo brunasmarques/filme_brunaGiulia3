@@ -8,10 +8,10 @@ async function buscarFilmes() {
     filmes.forEach((filme) => {
         sectionFilmes.innerHTML += `    
                     <div>
-                        <h2>${filme.title}</h2>
-                        <p><strong>Gênero:</strong> ${filme.gender}</p>
-                        <p><strong>Duração:</strong> ${filme.duration} minutos</p>
-                        <p><strong>Classificação indicativa:</strong> ${filme.ageLimit > 0 ? filme.ageLimit + ' anos' : 'Livre'}</p>
+                        <h2>${filme.titulo}</h2>
+                        <p><strong>Gênero:</strong> ${filme.genero}</p>
+                        <p><strong>Duração:</strong> ${filme.duracao} minutos</p>
+                        <p><strong>Classificação indicativa:</strong> ${filme.classificacao > 0 ? filme.classificacao + ' anos' : 'Livre'}</p>
                     </div>
                 `
     })
