@@ -22,6 +22,154 @@ h1 {
     width: 300px;
     height: 200px;
     border: 1px solid black;
-    padding: 20px;
+    padding: 10px;
     border-radius: 10px;
+}
+
+body{
+    margin: 0;
+    padding: 40px;
+    font-family: "Poppins", Arial, sans-serif;
+    background: linear-gradient(135deg, #ffd6e7, #fff1f7);
+    color: #5b3a46;
+}
+
+h1{
+    text-align: center;
+    color: #d63384;
+    font-size: 42px;
+    margin-bottom: 40px;
+}
+
+a{
+    text-decoration: none;
+}
+
+a button{
+    display: block;
+    margin: 0 auto 40px;
+}
+
+button{
+    background: #ff6fa8;
+    color: white;
+    border: none;
+    border-radius: 30px;
+    padding: 12px 22px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+    box-shadow: 0 8px 18px rgba(255,105,180,.25);
+}
+
+button:hover{
+    background: #ff4d94;
+    transform: translateY(-3px);
+}
+
+.filmes{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
+    gap: 20px;
+    justify-items: center;
+}
+
+.card{
+    background: white;
+    border-radius: 25px;
+    border: 3px solid #ffd1e6;
+    box-shadow: 0 12px 25px rgba(255,105,180,.18);
+
+    width: 930px;      /* aumenta a largura */
+    min-height: 530px; /* aumenta a altura */
+
+    padding: 35px;
+    margin: auto;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    transition: .3s;
+}
+
+.card:hover{
+    transform: translateY(-6px);
+    box-shadow: 0 18px 35px rgba(255,105,180,.28);
+}
+
+.card h2{
+    color: #e83e8c;
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 28px;
+}
+
+.card p{
+    font-size: 18px;
+    margin: 10px 0;
+    line-height: 1.5;
+}
+
+.card button{
+    width: 100%;
+    margin-top: 12px;
+}
+
+form{
+    width: 420px;
+    margin: auto;
+    background: white;
+    padding: 35px;
+    border-radius: 25px;
+    border: 3px solid #ffd1e6;
+    box-shadow: 0 15px 35px rgba(255,105,180,.20);
+
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+
+input{
+    padding: 14px;
+    border-radius: 15px;
+    border: 2px solid #ffc3da;
+    font-size: 16px;
+    outline: none;
+    transition: .3s;
+}
+
+input:focus{
+    border-color: #ff69b4;
+    box-shadow: 0 0 10px rgba(255,105,180,.25);
+}
+
+::placeholder{
+    color: #b77b92;
+}
+
+@media (max-width: 768px){
+
+    body{
+        padding: 20px;
+    }
+
+    h1{
+        font-size: 32px;
+    }
+
+    .filmes{
+        grid-template-columns: 1fr;
+    }
+
+    .card{
+        min-height: auto;
+    }
+
+    form{
+        width: 100%;
+        padding: 25px;
+        box-sizing: border-box;
+    }
 }
